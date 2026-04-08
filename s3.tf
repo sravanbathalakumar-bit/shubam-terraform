@@ -1,5 +1,5 @@
 resource aws_s3_bucket "bucket" {
-  bucket = "my-unique-bucket-name-12345-bathala"
+  bucket = "my-unique-bucket-name-12345-bathala-kumar"
   acl    = "private"
 
   tags = {
