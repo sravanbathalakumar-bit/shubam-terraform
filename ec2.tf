@@ -53,12 +53,12 @@ resource "aws_security_group" "my_security_group" {
   security_groups = [aws_security_group.my_security_group.name]
 
   root_block_device {
-    volume_size = 8
-    volume_type = "gp2"
+    volume_size = 15
+    volume_type = "gp3"
   }
 
    tags = {
     Name = "My EC2 Instance"
   }
  }
- 
+  
