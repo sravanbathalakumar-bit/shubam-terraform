@@ -1,6 +1,6 @@
 # keypair
 resource "aws_key_pair" "my_key_pair" {
-  key_name   = "my-key-pair"
+  key_name   = "my-key-pair_new"
   public_key = file("terraform_key.pub")
 }
 
@@ -9,12 +9,12 @@ resource "aws_default_vpc" "my_vpc" {
 }
 
 resource "aws_security_group" "my_security_group" {
-  name        = "tf-sg"
+  name        = "tf-sg-new"
   description = "Allow SSH and HTTP traffic"
   vpc_id      = aws_default_vpc.my_vpc.id
 
   tags = {
-    Name = "tf-sg"
+    Name = "tf-sg-new"
   }
   #inbound rule for ssh
   ingress {
